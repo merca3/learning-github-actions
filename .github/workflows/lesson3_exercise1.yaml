@@ -5,6 +5,6 @@ on:
 
 jobs:
   reuse-workflow:
-    uses: ./.github/workflows/lesson3_exercise1_reusable.yaml
+    uses: ./.github/workflows/lesson3_exercise1_reusable.yaml@main
     with:
       actor: ${{ github.actor }}
