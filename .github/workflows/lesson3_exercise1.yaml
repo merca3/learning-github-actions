@@ -5,6 +5,7 @@ on:
 
 jobs:
   reuse-workflow:
-    uses: ./.github/workflows/lesson3_exercise1_reusable.yaml@main
+    # Another repository or organization: owner/repo/.github/workflows/workflow.yml@ref
+    uses: ./.github/workflows/lesson3_exercise1_reusable.yaml
     with:
       actor: ${{ github.actor }}
