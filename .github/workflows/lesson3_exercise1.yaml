@@ -1,18 +1,10 @@
 name: Lesson 3 - Exercise 1
 
 on:
-    workflow_dispatch:
-      inputs:
-          actor:
-              description: "The person who will receive the greeting"
-              required: true
+  workflow_dispatch:
 
 jobs:
-    greeting:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Greetings message
-          run: |
-            echo "Well done: $ACTOR you've implemented reusable workflows successfully!"
-          env:
-            ACTOR: ${{ inputs.actor }}
+  reuse-workflow:
+    uses: LearningGHActions/microservices-workflows/.github/workflows/lesson3-exercise1.yaml@main
+    with:
+      actor: ${{ github.actor }}
