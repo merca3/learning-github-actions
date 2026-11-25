@@ -1,0 +1,6 @@
+name: "Lesson 4 - Exercise 3"
+
+on:
+  issues:
+    types: [opened]
+# Add your solution below this line
